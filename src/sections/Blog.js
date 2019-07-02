@@ -1,15 +1,13 @@
 import React from 'react'
 import {
-    Button,
-    Row
+  Button,
+  Row
 } from 'reactstrap'
 
-function Blog () {
-    return (
-        <Row style={{ backgroundColor: 'blue' }}>
-            <Button>Blog</Button>
-        </Row>
-    )
+export default function Blog () {
+  return (
+    <Row className='section' style={{ backgroundColor: 'orange' }}>
+      <Button>Blog</Button>
+    </Row>
+  )
 }
-
-export default Blog

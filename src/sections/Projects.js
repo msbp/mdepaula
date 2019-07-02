@@ -1,15 +1,13 @@
 import React from 'react'
 import {
-    Button,
-    Row
+  Button,
+  Row
 } from 'reactstrap'
 
-function Projects () {
-    return (
-        <Row style={{ backgroundColor: 'blue' }}>
-            <Button>Projects</Button>
-        </Row>
-    )
+export default function Projects () {
+  return (
+    <Row className='section' style={{ backgroundColor: 'red' }}>
+      <Button>Projects</Button>
+    </Row>
+  )
 }
-
-export default Projects

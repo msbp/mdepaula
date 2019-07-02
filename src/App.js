@@ -10,7 +10,6 @@ import Intro from './sections/Intro'
 import Blog from './sections/Blog'
 
 function App () {
-
   return (
     <Container fluid>
       <Row>
