@@ -1,25 +1,29 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import {
+  Container,
+  Col,
+  Row
+} from 'reactstrap'
+import Menu from './menu/Menu'
+import Projects from './sections/Projects'
+import Intro from './sections/Intro'
+import Blog from './sections/Blog'
 
 function App () {
+
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col xs='3'>
+          <Menu />
+        </Col>
+        <Col xs='9'>
+          <Intro />
+          <Projects />
+          <Blog />
+        </Col>
+      </Row >
+    </Container >
   )
 }
 
